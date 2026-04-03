@@ -17,7 +17,7 @@ export default function RegisterPage() {
     return (
         <div className="relative min-h-screen flex items-center justify-center bg-gray-100 text-black px-4">
 
-            {/* Subtle light background */}
+           
             <div className="absolute inset-0 bg-white" />
 
             <div className="w-full max-w-[320px] p-6 bg-white  shadow-lg z-10 border border-gray-200">
@@ -68,7 +68,7 @@ export default function RegisterPage() {
                     {({ isSubmitting }) => (
                         <Form className="space-y-4">
 
-                            {/* Name */}
+                            
                             <div className="grid grid-cols-2 gap-2">
                                 <div>
                                     <Field name="userFirstName" placeholder="First name" className={inputClass} />
