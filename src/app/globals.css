@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+  @font-face {
+    font-family: "Satoshi";
+    src: url("/fonts/Satoshi-Variable.ttf")
+  }
+  @font-face {
+    font-family: "Satoshi 2";
+    src: url("/fonts/Satoshi-Bold.otf")
+  }
+
+
+html, body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Satoshi", Arial, sans-serif;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Satoshi 2", Arial, sans-serif;
+}
+
+input,
+textarea,
+select {
+  @apply w-full bg-white text-black border border-gray-300 rounded-xl px-4 py-3 transition;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  @apply outline-none ring-2 ring-black border-black;
+}
+
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: black !important;
+}
+
+button {
+  @apply  font-semibold transition disabled:opacity-50;
+}
+
+
+.card {
+  @apply bg-white border border-gray-200 rounded-2xl shadow-sm p-6;
+}
+
+a {
+  @apply text-black hover:underline transition;
+}
+
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+.animate-blob {
+  animation: blob 10s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
