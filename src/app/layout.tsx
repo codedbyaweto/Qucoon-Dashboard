@@ -1,22 +1,16 @@
-import Providers from "@/lib/provider";
-import {ModalProvider} from "@/lib/ModalProvider";
-import {PageTransition} from "@/components/ui/PageTransition";
+import Providers from "@/components/provider/provider";
 import {ReactNode} from "react";
 import "./globals.css"
-import { Toaster } from "react-hot-toast";
 
-export default function RootLayout({children,}: { children: ReactNode}) {
+
+export default function RootLayout({children,}: { children: ReactNode }) {
     return (
-        <html lang="en">
-        <body>
         <Providers>
-            <Toaster />
-            <ModalProvider>
+            <html lang="en">
+            <body>
                 {children}
-                {/*<PageTransition>{children}</PageTransition>*/}
-            </ModalProvider>
+            </body>
+            </html>
         </Providers>
-        </body>
-        </html>
-    );
+    )
 }
