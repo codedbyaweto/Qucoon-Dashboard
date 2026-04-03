@@ -20,7 +20,7 @@ const LoginPage = () => {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-white text-black px-4">
             <Image
-                src="/images/qucoon1.svg"
+                src="/images/Qucoon1.svg"
                 alt="Logo"
                 width={120}
                 height={44}
