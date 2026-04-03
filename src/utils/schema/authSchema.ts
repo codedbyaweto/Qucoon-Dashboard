@@ -15,13 +15,9 @@ export const LoginSchema = object({
 });
 
 export const registerSchema = object({
-    userFirstName: defaultValidation("First name")
-        .min(2, "First name must be at least 2 characters")
-        .max(50, "First name too long"),
-
-    userLastName: defaultValidation("Last name")
-        .min(2, "Last name must be at least 2 characters")
-        .max(50, "Last name too long"),
+    userFirstName: defaultValidation("First name"),
+    
+    userLastName: defaultValidation("Last name"),
 
     userEmail: emailValidation(),
 
@@ -31,9 +27,7 @@ export const registerSchema = object({
 
     userPhone: phoneValidation(),
 
-    userAddress: defaultValidation("Address")
-        .min(5, "Address too short")
-        .max(100, "Address too long"),
-
+    userAddress: defaultValidation("Address"),
+    
     userBvn: bvnValidation(),
 });
