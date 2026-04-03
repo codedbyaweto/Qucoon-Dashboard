@@ -22,7 +22,7 @@ export default function RegisterModule() {
 
             <div className="absolute inset-0 bg-white"/>
 
-            <div className="w-full max-w-[320px] p-6 bg-white  shadow-lg z-10 border border-gray-200">
+            <div className="w-full max-w-[320px] p-6 bg-white  shadow-sm z-10 border border-gray-200">
 
                 <h1 className="text-2xl font-semibold text-center mb-6">
                     Create Account
