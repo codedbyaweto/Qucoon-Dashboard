@@ -3,8 +3,6 @@ import { string, ref } from "yup";
 export const defaultValidation = (name: string) =>
     string()
         .trim()
-        .min(3, ${name} must be at least 4 characters long);
-        .max(50, ${name} is too long);
         .required(`${name} is required`);
 
 export const emailValidation = () =>
