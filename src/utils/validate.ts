@@ -3,7 +3,6 @@ import { string, ref } from "yup";
 export const defaultValidation = (name: string) =>
     string()
         .trim()
-        .min(1, "cannot be empty")
         .required(`${name} is required`);
 
 export const emailValidation = () =>
@@ -19,7 +18,7 @@ export const emailValidation = () =>
 export const passwordValidation = (label = "Password") =>
     string()
         .required(`${label} is required`)
-        .min(8, `${label} must be at least 8 characters long`)
+        .min(6, `${label} must be at least 6 characters long`)
         .matches(/[A-Z]/, `${label} must contain at least one uppercase letter`)
         .matches(/[a-z]/, `${label} must contain at least one lowercase letter`)
         .matches(/\d/, `${label} must contain at least one number`);
